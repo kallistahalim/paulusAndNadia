@@ -161,8 +161,8 @@
                 parameters.minutes,
                 parameters.seconds
             );
-            targetTmpDate.setUTCHours(0);
-            targetTmpDate.setUTCDate(10);
+            targetTmpDate.setUTCHours(17);
+            targetTmpDate.setUTCDate(9);
             targetTmpDate.setUTCMonth(6);
             targetTmpDate.setUTCFullYear(2021);
 
@@ -191,8 +191,8 @@
 
                 now = new Date();
                 if (parameters.enableUtc) {
-                    nowUtc = new Date(now.getFullYear(), now.getMonth(), now.getDate(),
-                        now.getHours(), now.getMinutes(), now.getSeconds());
+                    nowUtc = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),
+                    now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
                     secondsLeft = (targetDate - nowUtc.getTime()) / 1000;
 
                 } else {
