@@ -161,8 +161,8 @@
                 parameters.minutes,
                 parameters.seconds
             );
-            targetTmpDate.setUTCHours(17);
-            targetTmpDate.setUTCDate(9);
+            targetTmpDate.setUTCHours(4);
+            targetTmpDate.setUTCDate(10);
             targetTmpDate.setUTCMonth(6);
             targetTmpDate.setUTCFullYear(2021);
 
